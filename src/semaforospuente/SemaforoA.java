@@ -5,15 +5,39 @@
  */
 package semaforospuente;
 
+import java.util.ArrayList;
+
 /**
  *
- * @author Sala_02
+ * @author Asus
  */
 public class SemaforoA extends Semaforo{
 
-    @Override
-    public void agregarVehiculo(Vehiculo v) {
-        this.colaVehiculos.add(v);
+    private boolean estado;
+    public ArrayList<Vehiculo> colaVehiculosA = new ArrayList();
+    
+    public SemaforoA() {
+       
+    }
+
+    public void activarSemaforo (){
+        setEstado(true);
+    }
+
+    public boolean semaforoVerde(){
+        return estado;
+    }
+
+    public void setEstado(boolean estado) {
+        this.estado = estado;
+    }
+
+    public ArrayList<Vehiculo> getColaVehiculosA() {
+        return colaVehiculosA;
+    }
+
+    public void setColaVehiculosA(ArrayList<Vehiculo> colaVehiculosA) {
+        this.colaVehiculosA = colaVehiculosA;
     }
     
     

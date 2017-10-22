@@ -9,14 +9,11 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Sala_02
+ * @author Asus
  */
 public abstract class Semaforo extends Thread{
     
-    private boolean estado;
-    private String posicion;
-    public ArrayList<Vehiculo> colaVehiculos = new ArrayList();
+    public ArrayList<Vehiculo> colaBloqueados = new ArrayList();
     
-    public abstract void agregarVehiculo(Vehiculo v);
     
 }
